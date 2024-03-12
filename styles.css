@@ -1,0 +1,558 @@
+/* Estilos para el encabezado (header) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #E1AFD1;
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #E1AFD1; /* color de fondo */
+    z-index: 1000; 
+}
+
+/* Agrega un margen superior al contenido para evitar que se superponga con el encabezado */
+.main-content {
+    margin-top: 100px; /* Ajusta este valor según la altura de tu encabezado */
+}
+
+/* Estilos adicionales para tu header, como altura, espaciado, etc. */
+
+
+.logo img {
+    width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+/* Estilos para los enlaces del menú */
+.header ul {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos al final del contenedor */
+    align-items: center;
+    padding-right: 15px;
+}
+
+.header ul li {
+    list-style: none;
+    font-size: 18px;
+    margin-left: 15px; /* Ajusta el margen izquierdo entre los elementos */
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #f83e95;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.header ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Estilos para el contenido principal */
+.main-content {
+    padding: 20px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+}
+
+.video-container video {
+    width: 100%;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+/* Estilos para la sección de redes sociales y enlaces */
+.social-links {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px;
+}
+
+/* Estilos para la galería de imágenes (carousel) */
+
+.image-gallery{
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+
+.image-gallery img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.image-gallery img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+@media only screen and (max-width: 768px){
+    .image-gallery {
+        width: 100%;}
+    
+    .image-gallery img{
+        max-width: 100%;
+    }
+
+}
+
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+    padding: 20px;
+}
+
+/* Estilos para el pie de página (footer) */
+.footer {
+    background-color: #685562;
+    color: rgb(252, 63, 73);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para los derechos reservados */
+.rights {
+    margin-top: 10px;
+}
+
+/* Estilos para los enlaces de redes sociales en el footer */
+.social-icons-footer {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons-footer li {
+    margin: 0 10px;
+}
+
+.social-icons-footer img {
+    width: 30px;
+}
+
+/* Estilos para el formulario de contacto */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #915086;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+button[type="submit"]:hover {
+    background-color: #b3003c;
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  /* Estilos para el texto principal */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600; 
+    color: #ff9dc6; 
+}
+
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+    line-height: 1.6; /* Ajusta el espaciado entre líneas del texto */
+    color: #e9c5c5;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #007bff; /* Cambia el color de los enlaces según tu preferencia */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+}
+
+a:hover {
+    text-decoration: underline; /* Agrega un subrayado al pasar el mouse sobre los enlaces */
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+    line-height: 1.6; /* Ajusta el espaciado entre líneas del texto */
+    color: #333232;
+}
+
+li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+    line-height: 1.6; /* Ajusta el espaciado entre líneas del texto */
+    color: #f3eaea;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    z-index: 1;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-menu ul li {
+    margin-bottom: 5px;
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu ul li a:hover {
+    background-color: #b65997;
+    color: #fff;
+}
+
+.dropdown-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Estilos para el contenedor del menú desplegable */
+.dropdown-container {
+    max-width: 600px; /* Mismo ancho que el formulario de contacto */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    padding: 20px; /* Ajusta el espaciado interno */
+}
+
+/* Estilos para el contenedor del menú desplegable y textos del menu*/
+.menu-container {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    width: 100%; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Estilos para el menú de opciones */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 100%; 
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+
+/* Estilos para el contenedor del botón */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Ajusta la altura del contenedor según tus necesidades */
+}
+
+/* Estilos para el botón */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #b65997;
+    color: white; /*Color del Texto*/
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background-color: #883849;
+}
+
+/* Estilos personalizados para el carrusel de imágenes */
+
+/* Establece una altura predeterminada para las imágenes del carrusel */
+.carousel-item img {
+    height: 400px; /* Ajusta la altura según sea necesario */
+    object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+  }
+  
+  /* Establece un margen inferior para separar el carrusel de otros elementos */
+  .image-gallery {
+    margin-bottom: 30px;
+  }
+  
+  /* Cambia el color de fondo y añade un poco de espacio alrededor del carrusel */
+  .carousel-inner {
+    background-color: #f8f9fa; /* Cambia el color de fondo según sea necesario */
+    padding: 20px;
+  }
+  
+  /* Establece un borde redondeado para el carrusel */
+  .carousel-inner,
+  .carousel-item {
+    border-radius: 10px; /* Ajusta el radio según sea necesario */
+  }
+  
+  /* Estilos para el título */
+.titulo-nosotros {
+    color: #ff9dc6; /* Cambia el color del texto del título a azul */
+}
+
+/* Estilos para el texto */
+.texto-nosotros {
+    color: #333; /* Cambia el color del texto a verde */
+    text-align: center;
+}
